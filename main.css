@@ -20,7 +20,7 @@
     justify-content: center;
 }
 
-.button {
+button {
     background-color: green;
     color: white;
     width: 100px;
@@ -32,10 +32,4 @@
 
 .operator {
     background-color: lightgreen;
-    color: white;
-    width: 100px;
-    height: 100px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
