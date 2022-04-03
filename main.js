@@ -7,26 +7,42 @@ for (let buttonCheck of selectButton) {
     // creates a new loop with variable (buttonCheck) used for iterating through the "array" returned from the "selectButton" querySelectorAll method.
     // console.log("click EventListener used");
     if (event.target.id === "clear") {
-      resultField.innertext === null;
+      resultField.innerText = "0";
       console.log("clear pressed");
     }
     if (event.target.id === "findResult") {
-      let finalCalculation = eval(resultField.innertext);
+      let finalCalculation = eval(resultField.innerText);
       resultField.innerText = finalCalculation;
       console.log(finalCalculation);
       console.log("findResult pressed");
     }
-    if (event.target.id === "operator") {
-      resultField.innerText += event.target.id;
-      console.log("operator pressed");
+    if (event.target.id === "divide") {
+      resultField.innerText += "/";
+      console.log("divide pressed");
     }
-    if (
-      event.target.id ===
-      "point, zero, one, two, three, four, five, six, seven, eight, nine"
-    ) {
-      resultField.innerText += event.target.id;
-      console.log("point thru 9 pressed");
+    if (event.target.id === "multiply") {
+      resultField.innerText += "*";
+      console.log("multiply pressed");
     }
+    if (event.target.id === "add") {
+      resultField.innerText += "+";
+      console.log("add pressed");
+    }
+    if (event.target.id === "subtract") {
+      resultField.innerText += "-";
+      console.log("subtract pressed");
+    }
+    if (event.target.id === "point") {
+      resultField.innerText += ".";
+      console.log("point pressed");
+    }
+    // if (
+    //   event.target.id ===
+    //   "point, zero, one, two, three, four, five, six, seven, eight, nine"
+    // ) {
+    //   resultField.innerText += event.target.id;
+    //   console.log("point thru 9 pressed");
+    // }
   });
 }
 
