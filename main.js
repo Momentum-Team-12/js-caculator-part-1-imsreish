@@ -7,7 +7,7 @@ for (let buttonCheck of selectButton) {
     // creates a new loop with variable (buttonCheck) used for iterating through the "array" returned from the "selectButton" querySelectorAll method.
     // console.log("click EventListener used");
     if (event.target.id === "clear") {
-      resultField.innerText = "0";
+      resultField.innerText = null;
       console.log("clear pressed");
     }
     if (event.target.id === "findResult") {
@@ -35,6 +35,46 @@ for (let buttonCheck of selectButton) {
     if (event.target.id === "point") {
       resultField.innerText += ".";
       console.log("point pressed");
+    }
+    if (event.target.id === "zero") {
+      resultField.innerText += "0";
+      console.log("zero pressed");
+    }
+    if (event.target.id === "one") {
+      resultField.innerText += "1";
+      console.log("one pressed");
+    }
+    if (event.target.id === "two") {
+      resultField.innerText += "2";
+      console.log("two pressed");
+    }
+    if (event.target.id === "three") {
+      resultField.innerText += "3";
+      console.log("three pressed");
+    }
+    if (event.target.id === "four") {
+      resultField.innerText += "4";
+      console.log("four pressed");
+    }
+    if (event.target.id === "five") {
+      resultField.innerText += "5";
+      console.log("five pressed");
+    }
+    if (event.target.id === "six") {
+      resultField.innerText += "6";
+      console.log("six pressed");
+    }
+    if (event.target.id === "seven") {
+      resultField.innerText += "7";
+      console.log("seven pressed");
+    }
+    if (event.target.id === "eight") {
+      resultField.innerText += "8";
+      console.log("eight pressed");
+    }
+    if (event.target.id === "nine") {
+      resultField.innerText += "9";
+      console.log("nine pressed");
     }
     // if (
     //   event.target.id ===
