@@ -1,9 +1,3 @@
-/* .resultsRow {
-    display: flex;
-    align-items: stretch;
-} */
-
-
 .row {
     display: flex;
     align-items: center;
@@ -23,10 +17,15 @@
 .operator {
     background-color: lightgreen;
 }
+input:invalid {
+    border: red solid 3px;
+}
 
 #findResult {
     background-color: fuchsia;
 }
+
+
 
 #clear {
     background-color: red;
