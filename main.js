@@ -7,73 +7,91 @@ for (let buttonCheck of selectButton) {
     // creates a new loop with variable (buttonCheck) used for iterating through the "array" returned from the "selectButton" querySelectorAll method.
     // console.log("click EventListener used");
     if (event.target.id === "clear") {
-      resultField.innerText = null;
+      // resultField.innerText = null;
+      resultField.value = null;
       console.log("clear pressed");
     }
     if (event.target.id === "findResult") {
-      let finalCalculation = eval(resultField.innerText);
-      resultField.innerText = finalCalculation;
+      // let finalCalculation = eval(resultField.innerText);
+      let finalCalculation = eval(resultField.value);
+      // resultField.innerText = finalCalculation;
+      resultField.value = finalCalculation;
       console.log(finalCalculation);
       console.log("findResult pressed");
     }
     if (event.target.id === "divide") {
-      resultField.innerText += "/";
+      // resultField.innerText += "/";
+      resultField.value += "/";
       console.log("divide pressed");
     }
     if (event.target.id === "multiply") {
-      resultField.innerText += "*";
+      // resultField.innerText += "*";
+      resultField.value += "*";
       console.log("multiply pressed");
     }
     if (event.target.id === "add") {
-      resultField.innerText += "+";
+      // resultField.innerText += "+";
+      resultField.value += "+";
       console.log("add pressed");
     }
     if (event.target.id === "subtract") {
-      resultField.innerText += "-";
+      // resultField.innerText += "-";
+      resultField.value += "-";
       console.log("subtract pressed");
     }
     if (event.target.id === "point") {
-      resultField.innerText += ".";
+      // resultField.innerText += ".";
+      resultField.value += ".";
       console.log("point pressed");
     }
     if (event.target.id === "zero") {
-      resultField.innerText += "0";
+      // resultField.innerText += "0";
+      resultField.value += "0";
       console.log("zero pressed");
     }
     if (event.target.id === "one") {
-      resultField.innerText += "1";
+      // resultField.innerText += "1";
+      resultField.value += "1";
       console.log("one pressed");
     }
     if (event.target.id === "two") {
-      resultField.innerText += "2";
+      // resultField.innerText += "2";
+      resultField.value += "2";
       console.log("two pressed");
     }
     if (event.target.id === "three") {
-      resultField.innerText += "3";
+      // resultField.innerText += "3";
+      resultField.value += "3";
       console.log("three pressed");
     }
     if (event.target.id === "four") {
-      resultField.innerText += "4";
+      // resultField.innerText += "4";
+      resultField.value += "4";
       console.log("four pressed");
     }
     if (event.target.id === "five") {
-      resultField.innerText += "5";
+      // resultField.innerText += "5";
+      resultField.value += "5";
       console.log("five pressed");
     }
     if (event.target.id === "six") {
-      resultField.innerText += "6";
+      // resultField.innerText += "6";
+      resultField.value += "6";
       console.log("six pressed");
     }
     if (event.target.id === "seven") {
-      resultField.innerText += "7";
+      // resultField.innerText += "7";
+      resultField.value += "7";
       console.log("seven pressed");
     }
     if (event.target.id === "eight") {
-      resultField.innerText += "8";
+      // resultField.innerText += "8";
+      resultField.value += "8";
       console.log("eight pressed");
     }
     if (event.target.id === "nine") {
-      resultField.innerText += "9";
+      // resultField.innerText += "9";
+      resultField.value += "9";
       console.log("nine pressed");
     }
     // if (
