@@ -5,25 +5,48 @@ const selectButton = document.querySelectorAll(".button");
 for (let buttonCheck of selectButton) {
   buttonCheck.addEventListener("click", (event) => {
     // creates a new loop with variable (buttonCheck) used for iterating through the "array" returned from the "selectButton" querySelectorAll method.
-    console.log("click EventListener used");
-
+    // console.log("click EventListener used");
     if (event.target.id === "clear") {
-      resultField.innerText === null;
+      resultField.innertext === null;
+      console.log("clear pressed");
     }
-    else if (event.target.id !== "findResult") {
-      resultField.innerText += event.target.id;
-      console.log(resultField.innerText);
-    }
-    
     if (event.target.id === "findResult") {
-      eval(resultField.innerText);
-      // let theResult = eval(resultField.innerText);
-      // resultField.innerText = theResult;
-      // console.log(theResult);
-      console.log(resultField.innerText);
+      let finalCalculation = eval(resultField.innertext);
+      resultField.innerText = finalCalculation;
+      console.log(finalCalculation);
+      console.log("findResult pressed");
+    }
+    if (event.target.id === "operator") {
+      resultField.innerText += event.target.id;
+      console.log("operator pressed");
+    }
+    if (
+      event.target.id ===
+      "point, zero, one, two, three, four, five, six, seven, eight, nine"
+    ) {
+      resultField.innerText += event.target.id;
+      console.log("point thru 9 pressed");
     }
   });
 }
+
+//     if (event.target.id === "clear") {
+//       resultField.innerText === "";
+//     }
+//     if (event.target.id !== "findResult") {
+//       resultField.innerText += event.target.id;
+//       console.log(resultField.innerText);
+//     }
+
+//     if (event.target.id === "findResult") {
+//       eval(resultField.innerText);
+//       // let theResult = eval(resultField.innerText);
+//       // resultField.innerText = theResult;
+//       // console.log(theResult);
+//       console.log(resultField.innerText);
+//     }
+//   });
+// }
 
 // button.addEventListener("click", (event) => {
 //   button.textContent = `Click count: ${event.detail}`;
