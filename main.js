@@ -1,6 +1,6 @@
 console.log("JS is connected");
 
-const selectButton = document.querySelectorAll(".button");
+const selectButton = document.querySelectorAll("button");
 // declares new varibale (button) equivalent to the querySelectorAll method for every element "button".
 for (let buttonCheck of selectButton) {
   buttonCheck.addEventListener("click", (event) => {
@@ -94,6 +94,7 @@ for (let buttonCheck of selectButton) {
       resultField.value += "9";
       console.log("nine pressed");
     }
+
     // if (
     //   event.target.id ===
     //   "point, zero, one, two, three, four, five, six, seven, eight, nine"
