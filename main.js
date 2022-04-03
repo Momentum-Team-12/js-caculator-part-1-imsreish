@@ -1,4 +1,35 @@
 console.log("JS is connected");
+
+const selectButton = document.querySelectorAll(".button");
+// declares new varibale (button) equivalent to the querySelectorAll method for every element "button".
+for (let buttonCheck of selectButton) {
+  buttonCheck.addEventListener("click", (event) => {
+    // creates a new loop with variable (buttonCheck) used for iterating through the "array" returned from the "selectButton" querySelectorAll method.
+    console.log("click EventListener used");
+
+    if (event.target.id === "clear") {
+      resultField.innerText === null;
+    }
+    else if (event.target.id !== "findResult") {
+      resultField.innerText += event.target.id;
+      console.log(resultField.innerText);
+    }
+    
+    if (event.target.id === "findResult") {
+      eval(resultField.innerText);
+      // let theResult = eval(resultField.innerText);
+      // resultField.innerText = theResult;
+      // console.log(theResult);
+      console.log(resultField.innerText);
+    }
+  });
+}
+
+// button.addEventListener("click", (event) => {
+//   button.textContent = `Click count: ${event.detail}`;
+//   console.log("button has been clicked");
+// });
+
 // 'button');
 // btns.addEventListener("click", printToLog());
 // function printToLog() {
@@ -18,6 +49,12 @@ console.log("JS is connected");
 // for (index = 0; index < buttonClick.length; index++) {
 //   console.log("click");
 // }
+
+// let btnClick = document.querySelectorAll(".row");
+// btnClick.addEventListener("click", function (event) {
+//   console.log(event);
+//   event.target.remove();
+// });
 
 // }
 // let btns = document.querySelectorAll(".button");

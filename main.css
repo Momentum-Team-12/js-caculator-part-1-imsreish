@@ -10,17 +10,7 @@
     justify-items: center;
 }
 
-#results {
-    background-color: green;
-    color: white;
-    width: 300px;
-    height: 100px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-button {
+.button {
     background-color: green;
     color: white;
     width: 100px;
@@ -32,4 +22,22 @@ button {
 
 .operator {
     background-color: lightgreen;
+}
+
+#findResult {
+    background-color: fuchsia;
+}
+
+#clear {
+    background-color: red;
+}
+
+#resultField {
+    background-color: blueviolet;
+    color: white;
+    width: 300px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
