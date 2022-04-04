@@ -1,15 +1,20 @@
+* {
+    font-family: 'Jost', sans-serif;
+}
+
 .row {
     display: flex;
-    
     align-items: space-between;
-    justify-items: space-between;
-    width: 400px;
+    justify-content: space-around;
+    width:430px;
     /* border: 1px solid black; */
+    padding: 7px;
 }
 
 /* From cssbuttons.io by @adamgiebl */
 button {
     color: #090909;
+    display: block;
     padding: 0.7em 1.7em;
     font-size: 18px;
     border-radius: 0.5em;
@@ -18,13 +23,16 @@ button {
     background: #e8e8e8;
     border: 1px solid #e8e8e8;
     border-radius: 50px;
-    transition: all .3s;
+    transition: all .5s;
     box-shadow: 6px 6px 12px #c5c5c5,
                 -6px -6px 12px #ffffff;
    }
    
    button:hover {
-    border: 1px solid white;
+    border: 2px solid white;
+    font-size: x-large;
+    line-height: 0px;
+    transition: all .5s;
    }
    
    button:active {
@@ -33,7 +41,7 @@ button {
    }
 
 input:invalid {
-    border: red solid 3px;
+    border: 1 px red solid 3px;
 }
 
 #findResult {
@@ -46,7 +54,7 @@ input:invalid {
     padding: 0.7em 1.7em;
     font-size: 18px;
     border-radius: 0.5em;
-    width: 340px;
+    width: 360px;
     height: 40px;
     background: #e8e8e8;
     border: 1px solid #e8e8e8;
