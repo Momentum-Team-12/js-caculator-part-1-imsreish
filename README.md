@@ -18,6 +18,7 @@
 ❌ Operators at the beginning of a calculation result in an error
 ❌ No implementation yet to reject undesirable user input (i.e. letters, special characters)
 ❌ No automatic conversion of user intent -- for example, typing "x" does not automatically convert to "\*"
+❌ Divide by zero results in Infinity
 ❌ eval has its limitations
 ❌ JS is written very inefficiently
 
