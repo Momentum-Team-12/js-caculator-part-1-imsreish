@@ -8,41 +8,42 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/3.3.0/math.min.js"></script>
     <title>Document</title>
 </head>
 <body>
     <div class="row">
         <!-- <button id="clear">c</button> -->
         <!-- <div id="resultField"></div> -->
-        <input type="text" pattern="[0-9]" placeholder="0" id="resultField">
+        <input type="text" placeholder="0" id="resultField" autofocus="required">
     </div>
     <div class="row">
         <button id="clear">C</button>
-        <button id="openParentheses">(</button>
-        <button id="closeParentheses">)</button>
-        <button class="operator" id="divide">/</button>
+        <button id="openParentheses" value="(">(</button>
+        <button id="closeParentheses" value=")">)</button>
+        <button id="divide" value="/">/</button>
     </div>
     <div class="row">
-        <button id="seven">7</button>
-        <button id="eight">8</button>
-        <button id="nine">9</button>
-        <button class="operator" id="multiply">X</button>
+        <button id="seven" value="7">7</button>
+        <button id="eight" value="8">8</button>
+        <button id="nine" value="9">9</button>
+        <button id="multiply" value="X">X</button>
     </div>
     <div class="row">
-        <button id="four">4</button>
-        <button id="five">5</button>
-        <button id="six">6</button>
-        <button class="operator" id="subtract">-</button>
+        <button id="four" value="4">4</button>
+        <button id="five" value="5">5</button>
+        <button id="six" value="6">6</button>
+        <button id="subtract" value="-">-</button>
     </div>
     <div class="row">
-        <button id="one">1</button>
-        <button id="two">2</button>
-        <button id="three">3</button>
-        <button class="operator" id="add">+</button>
+        <button id="one" value="1">1</button>
+        <button id="two" value="2">2</button>
+        <button id="three" value="3">3</button>
+        <button id="add" value="+">+</button>
     </div>
     <div class="row">
-        <button id="zero">0</button>
-        <button id="point">.</button>
+        <button id="zero" value="0">0</button>
+        <button id="point" value=".">.</button>
         <button id="findResult">Solve</button>
     </div>
 </body>
