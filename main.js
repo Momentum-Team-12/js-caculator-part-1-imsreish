@@ -19,6 +19,16 @@ for (let buttonCheck of selectButton) {
       console.log(finalCalculation);
       console.log("findResult pressed");
     }
+    if (event.target.id === "openParentheses") {
+      // resultField.innerText += "(";
+      resultField.value += "(";
+      console.log("open parentheses pressed");
+    }
+    if (event.target.id === "closeParentheses") {
+      // resultField.innerText += ")";
+      resultField.value += ")";
+      console.log("close parentheses pressed");
+    }
     if (event.target.id === "divide") {
       // resultField.innerText += "/";
       resultField.value += "/";
